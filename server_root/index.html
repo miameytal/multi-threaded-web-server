@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Computer Networks 2023: Exercise 1</title>
+    <style>
+        #movingTitle {
+            color: blue;
+            text-align: center;
+            animation: moveTitle 2s linear infinite alternate;
+        }
+
+        @keyframes moveTitle {
+            from { margin-left: 0; }
+            to { margin-left: 10px; }
+        }
+
+        #fixedTitle {
+            color: red;
+            text-align: center;
+        }
+
+        #imageContainer {
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="movingTitle">Let's Test the Server!</h1>
+
+    <h2 id="fixedTitle">Made by Mia Roldan</h2>
+
+    <div id="imageContainer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/640px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Image 1" style="width: 300px; margin: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/800px-NASA-Apollo8-Dec24-Earthrise.jpg" alt="Image 2" style="width: 300px; margin: 10px;">
+    </div>
+
+    <p><a href="https://www.youtube.com">Favorite Website</a></p>
+
+    <hr>
+
+    <form action="params_info.html" method="post">
+        <input type="checkbox" id="CS" name="CS">
+        <label for="CS">Let's see if this check box works...check it, or don't.</label><br>
+
+        <label for="message">Now, let's see if a message would work, penny for your thoughts?:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="hidden" name="submitted" value="true">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+The bonus I implemented is the WebClient class. It represents an implementation of a web client. 
+
+1. WebClient Class: This is the main class of the program. 
+
+    - Main Method: The `main` method is the entry point of the program. It creates an instance of `WebClient` and calls the `connectionrequest` method.
+    
+    - Connection Request Method: This method establishes a connection to the server using a socket and then prompts the user to specify an HTTP request. It creates an instance of `Sendhttpreq` class to send the HTTP request.
+
+2. Sendhttpreq Class: This inner class is responsible for sending HTTP requests to the server.
+
+    - HTTP Request Method: This method reads user input from the console to construct an HTTP request. It then sends the request to the server. 
+    After sending the request, it creates an instance of the `clientmanagement` class to handle the server's response.
+    
+3. clientmanagement Class: This inner class manages the client's response received from the server.
+
+    - Client Handler Method: This method reads the server's response from the socket's input stream. It processes the response and prints relevant information based on the HTTP response status codes. It closes the input stream and socket after handling the response.
