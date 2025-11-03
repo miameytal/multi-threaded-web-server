@@ -23,9 +23,6 @@ A multi-threaded HTTP/1.1 web server implementation in Java that handles concurr
 - **Dynamic Content**: Parameter substitution in HTML files for POST requests
 - **Error Handling**: Comprehensive HTTP status code support (200, 400, 404, 500, 501, 503)
 
-### Bonus Feature
-- **WebClient**: Custom HTTP client implementation for testing and interacting with the server
-
 ## Architecture
 
 The server follows a modular design with clear separation of concerns:
@@ -112,7 +109,7 @@ Server started and is listening on port 8080
 Max Threads: 10
 ```
 
-### Using the Web Client (Bonus)
+### Using the Web Client
 
 Run the included WebClient to test the server:
 
@@ -140,7 +137,7 @@ multi-threaded-web-server/
 ├── Sources/
 │   ├── WebServer.java          # Main server implementation
 │   ├── HTTPRequest.java         # Request parser and MIME handler
-│   ├── WebClient.java           # Bonus: HTTP client implementation
+│   ├── WebClient.java           # HTTP client implementation
 │   ├── ConfigReader.java        # Configuration file reader
 │   └── *.class                  # Compiled bytecode
 ├── server_root/
@@ -192,7 +189,7 @@ multi-threaded-web-server/
 | 501 Not Implemented | Method not supported | Unsupported HTTP method |
 | 503 Service Unavailable | Server overloaded | Maximum threads reached |
 
-## Bonus: WebClient
+## WebClient
 
 The included `WebClient.java` provides a command-line HTTP client for testing the server:
 
@@ -227,3 +224,4 @@ The included `WebClient.java` provides a command-line HTTP client for testing th
 **Compilation errors:**
 - Ensure all `.java` files are in the `Sources` directory
 - Check JDK version compatibility
+
